@@ -1,0 +1,89 @@
+[[scenario]]
+id = "RT-001"
+title = "Подписка догоняет события после bind и подтверждается последней последовательностью"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-002"
+title = "Одна привязка обслуживает локальных клиентов и отзыв прав закрывает доставку"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-003"
+title = "Потеря брокера запрашивает пересинхронизацию"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-004"
+title = "Периодическая проверка закрывает отозванный доступ без новых событий"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-005"
+title = "Лимит подписок и недопустимые идентификаторы отклоняются"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-006"
+title = "Догонка вызывает incidents с пользовательским токеном"
+layer = "unit"
+domain = "history"
+
+[[scenario]]
+id = "RT-007"
+title = "JWT проверяет подпись и живость сессии"
+layer = "unit"
+domain = "security"
+
+[[scenario]]
+id = "RT-008"
+title = "Очередь реплики ограничена и слушает control"
+layer = "unit"
+domain = "broker"
+
+[[scenario]]
+id = "RT-009"
+title = "Live-конверт разворачивается в событие"
+layer = "unit"
+domain = "broker"
+
+[[scenario]]
+id = "RT-010"
+title = "Формат и размер кадров проверяются"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-011"
+title = "Обязательные настройки проверяются"
+layer = "unit"
+domain = "config"
+
+[[scenario]]
+id = "RT-012"
+title = "Liveness не зависит от внешних сервисов"
+layer = "unit"
+domain = "health"
+
+[[scenario]]
+id = "RT-013"
+title = "Удаление проекта закрывает всех участников, исключение закрывает только выбранного"
+layer = "unit"
+domain = "websocket"
+
+[[scenario]]
+id = "RT-014"
+title = "Догонка повторно проверяет права до выдачи истории"
+layer = "unit"
+domain = "security"
+
+[[scenario]]
+id = "RT-015"
+title = "Две реплики маршрутизируют события, ASGI WebSocket переподключается, leases и очереди очищаются; drop-head скрывает потерю"
+layer = "integration"
+domain = "broker"
