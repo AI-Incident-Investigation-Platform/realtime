@@ -1,0 +1,14 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: realtime
+spec:
+  scaleTargetRef: {name: realtime}
+  minReplicaCount: 2
+  maxReplicaCount: 4
+  pollingInterval: 5
+  fallback: {failureThreshold: 3, replicas: 2}
+  triggers:
+    - type: cpu
+      metricType: AverageValue
+      metadata: {value: 500m}

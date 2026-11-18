@@ -1,0 +1,12 @@
+rabbitmq_url = "amqp://realtime:replace-me@rabbitmq.infra:5672/"
+redis_url = "redis://default:replace-me@dragonfly.infra:6379/0"
+jwks_url = "http://auth.apps:8001/.well-known/jwks.json"
+auth_url = "http://auth.apps:8001"
+projects_url = "http://projects.apps:8003"
+incidents_url = "http://incidents.apps:8006"
+client_id = "realtime"
+client_secret = "replace-me"
+allowed_origins = ["http://localhost", "https://localhost"]
+issuer = "auth"
+audience = "aiip"
+port = 8009
